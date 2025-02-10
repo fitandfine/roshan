@@ -1,1 +1,314 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roshan Shahi - Managing Director & Operation Manager</title>
+
+  <!-- Font Awesome Icons (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <style>
+    /*********************************************
+     * COLOR THEME & ROOT VARIABLES
+     *********************************************/
+    :root {
+      --primary: #4B0082;   /* Indigo / Purple Hue */
+      --dark: #2c2c2c;      /* Dark Gray */
+      --light: #f6f6f6;     /* Light background */
+      --accent: #ffbe0b;    /* Accent color (warm yellow) */
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /*********************************************
+     * GLOBAL & RESET
+     *********************************************/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-family-sans-serif);
+      background-color: var(--light);
+      color: var(--dark);
+      text-align: center;
+    }
+
+    /*********************************************
+     * HEADER
+     *********************************************/
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+      font-weight: bold;
+    }
+
+    /*********************************************
+     * CONTAINER
+     *********************************************/
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /*********************************************
+     * PROFILE IMAGE
+     *********************************************/
+    .profile-img {
+      width: 100%;
+      max-width: 200px; 
+      height: auto;
+      border: 5px solid var(--primary);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      margin: 10px auto;
+      display: block;
+    }
+
+    /*********************************************
+     * BUTTONS AND GRIDS
+     *********************************************/
+    .btn {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      display: inline-block; 
+      margin-bottom: 10px;
+    }
+    .btn:hover {
+      background-color: var(--dark);
+      transform: scale(1.05);
+    }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    /*********************************************
+     * FOOTER
+     * (Kept EXACTLY the same, per your request)
+     *********************************************/
+    footer {
+      background-color: var(--dark);
+      color: #fff;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 16px;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /*********************************************
+     * MODAL (QR)
+     *********************************************/
+    .modal {
+      display: none; 
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+    }
+    .qr-img {
+      width: 80%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    /*********************************************
+     * RESPONSIVE
+     *********************************************/
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 14px;
+      }
+      .modal-content {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Roshan Shahi</h1>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+    <!-- Profile Image -->
+    <img src="profile.jpg" alt="Roshan Shahi" class="profile-img" />
+    <!-- Title/Designations -->
+    <h3 style="margin-top: 20px;">Managing Director</h3>
+    <h4>R.S & Associates Pvt. Ltd</h4>
+    <br>
+    <h3 style="margin-top: 20px;">Operation Manager</h3>
+    <h4>Rising Builders and Engineers Pvt. Ltd</h4>
+    <br>
+    
+    <!-- Social Profiles & Website -->
+    <a href="https://www.facebook.com/Associateshahi" class="btn" target="_blank">
+      <i class="fab fa-facebook"></i> Follow on Facebook
+    </a>
+    <br><br>
+    <a href="https://risingbuilder.com/?fbclid=IwY2xjawIWgB5leHRuA2FlbQIxMAABHR69FFVmlFwbQ_OkojEXXfrc2to5UVFK83xWvrL9VV6r6aKjvyp9nFqelg_aem_kZ8cqf2xI2a-IJt99Fa1KA"
+       class="btn" target="_blank">
+      <i class="fas fa-globe"></i> Visit Website
+    </a>
+
+    <!-- Contact Buttons -->
+    <div class="btn-grid">
+      <!-- Phone 1 + SMS -->
+      <a href="tel:+9779818058828" class="btn">
+        <i class="fas fa-phone"></i> Call (+977 9818058828)
+      </a>
+      <a href="sms:+9779818058828" class="btn">
+        <i class="fas fa-sms"></i> SMS (+977 9818058828)
+      </a>
+
+      <!-- Phone 2 + SMS + WhatsApp -->
+      <a href="tel:+9779858425853" class="btn">
+        <i class="fas fa-phone-alt"></i> Call (+977 9858425853)
+      </a>
+      <a href="sms:+9779858425853" class="btn">
+        <i class="fas fa-sms"></i> SMS (+977 9858425853)
+      </a>
+      <a href="https://wa.me/9779858425853" class="btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER (Exactly the same, per your request) -->
+  <footer>
+    <a href="https://fitandfine.github.io/anup" style="margin-left: 20px;">
+      <i class="fas fa-tools"></i> By
+    </a>
+    <button 
+      onclick="saveContact()" 
+      style="background: none; border: none; color: #fff; font-size: 16px; cursor: pointer;"
+    >
+      <i class="fas fa-save"></i> Save Contact
+    </button>
+    <a 
+      href="#" 
+      onclick="showModal()" 
+      style="margin-right: 20px;"
+    >
+      <i class="fas fa-qrcode"></i> QR
+    </a>
+  </footer>
+
+  <!-- QR Modal -->
+  <div id="qrModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>https://fitandfine.github.io/roshan</p>
+      <img src="qr.png" alt="QR Code" class="qr-img" />
+      <p>Scan this QR code to share my contact details.</p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Show QR Modal
+    function showModal() {
+      document.getElementById("qrModal").style.display = "block";
+    }
+
+    // Close QR Modal
+    function closeModal() {
+      document.getElementById("qrModal").style.display = "none";
+    }
+
+    // Close modal if user clicks outside modal-content
+    window.onclick = function (event) {
+      if (event.target === document.getElementById("qrModal")) {
+        closeModal();
+      }
+    };
+
+    // Save Contact (.vcf)
+    function saveContact() {
+      // vCard for Roshan Shahi
+      var vCardData = 
+        "BEGIN:VCARD\n" +
+        "VERSION:3.0\n" +
+        "FN:Roshan Shahi\n" +
+        "ORG:R.S & Associates Pvt. Ltd;Rising Builders & Engineers Pvt. Ltd\n" +
+        "TITLE:Managing Director & Operation Manager\n" +
+        "TEL;TYPE=WORK,VOICE:+9779818058828\n" +
+        "TEL;TYPE=CELL:+9779858425853\n" +
+        "URL:https://risingbuilder.com\n" +
+        "NOTE:Also find on Facebook at https://www.facebook.com/Associateshahi\n" +
+        "END:VCARD";
+
+      var blob = new Blob([vCardData], { type: "text/vcard" });
+      var link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "RoshanShahi.vcf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
